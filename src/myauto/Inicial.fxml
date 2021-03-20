@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="925.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="myauto.InicialController">
+    <stylesheets>
+        <URL value="@inicial.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="339.0" layoutY="-1.0" prefHeight="685.0" prefWidth="707.0" style="-fx-background-color: #d3d3d3;">
+         <children>
+            <AnchorPane id="pnServico" fx:id="pnServico" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: black;" />
+            <AnchorPane id="pnReabastecimento" fx:id="pnReabastecimento" layoutX="4.0" layoutY="-1.0" prefHeight="675.0" prefWidth="707.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <DatePicker layoutX="93.0" layoutY="116.0" promptText="DATA" />
+                  <JFXTimePicker layoutX="337.0" layoutY="116.0" promptText="HORA" />
+                  <JFXTextArea fx:id="txtOdometro" layoutX="86.0" layoutY="204.0" prefHeight="33.0" prefWidth="208.0" promptText="Odômetro" />
+                  <ComboBox fx:id="cbCombustivel" layoutX="317.0" layoutY="210.0" prefHeight="25.0" prefWidth="173.0" promptText="Combustível" />
+                  <JFXTextArea fx:id="txtOdometro1" layoutX="58.0" layoutY="272.0" prefHeight="33.0" prefWidth="208.0" promptText="Preço/Litro" />
+                  <JFXTextArea fx:id="txtOdometro11" layoutX="273.0" layoutY="272.0" prefHeight="33.0" prefWidth="208.0" promptText="Custo Total" />
+                  <JFXTextArea fx:id="txtOdometro111" layoutX="490.0" layoutY="272.0" prefHeight="33.0" prefWidth="208.0" promptText="Litros" />
+                  <CheckBox layoutX="65.0" layoutY="343.0" mnemonicParsing="false" text="Você está enchendo o Tanque?" />
+                  <JFXTextArea fx:id="txtOdometro12" layoutX="70.0" layoutY="403.0" prefHeight="33.0" prefWidth="208.0" promptText="Nome do Posto (Opcional)" />
+                  <JFXTextArea fx:id="txtOdometro121" layoutX="294.0" layoutY="403.0" prefHeight="33.0" prefWidth="208.0" promptText="Razão Social do Posto (Opcional)" />
+                  <Button id="btnCarro" layoutX="224.0" layoutY="554.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-1.0" prefHeight="686.0" prefWidth="295.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXButton id="btnReabastecimento" fx:id="btnReabastecimento" graphicTextGap="150.0" layoutY="108.0" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="REABASTECIMENTO" textAlignment="CENTER" />
+            <JFXButton id="btnServico" fx:id="btnServico" graphicTextGap="150.0" layoutY="164.0" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="SERVIÇO" textAlignment="CENTER" />
+            <JFXButton fx:id="btnDespesa" graphicTextGap="150.0" layoutY="220.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="DESPESA" />
+            <JFXButton fx:id="btnRenda" graphicTextGap="150.0" layoutY="276.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="RENDA" />
+            <JFXButton fx:id="btnRota" graphicTextGap="150.0" layoutY="332.0" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="ROTA" />
+            <JFXButton fx:id="btnLembrete" graphicTextGap="150.0" layoutY="388.0" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="LEMBRETE" />
+            <AnchorPane layoutY="1.0" prefHeight="685.0" prefWidth="57.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

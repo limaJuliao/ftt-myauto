@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="btnRegistrar" prefHeight="649.0" prefWidth="1049.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="myauto.VeiculosController">
+    <stylesheets>
+        <URL value="@veiculos.css" />
+    </stylesheets>
+   <children>
+      <Button id="btnCarro" layoutX="419.0" layoutY="413.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+         <font>
+            <Font name="Calibri Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="212.0" layoutY="37.0" text="Sobre seu veículo" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Ravie" size="58.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbVeiculo" layoutX="32.0" layoutY="249.0" prefWidth="150.0" promptText="Tipo de Veículo " />
+      <ComboBox fx:id="cbFabricante" layoutX="212.0" layoutY="249.0" prefWidth="150.0" promptText="Fabricante" />
+      <ComboBox fx:id="cbModelo" layoutX="382.0" layoutY="249.0" prefWidth="150.0" promptText="Modelo" />
+      <ComboBox fx:id="cbDistancia" layoutX="564.0" layoutY="249.0" prefHeight="25.0" prefWidth="173.0" promptText="Unidade de Distância" />
+      <TextArea layoutX="764.0" layoutY="234.0" prefHeight="8.0" prefWidth="271.0" promptText="Qual apelido do seu veículo?" AnchorPane.bottomAnchor="359.0" AnchorPane.leftAnchor="764.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="234.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextArea>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </opaqueInsets>
+</AnchorPane>
