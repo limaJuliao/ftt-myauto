@@ -8,39 +8,16 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="925.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="myauto.InicialController">
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="925.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myauto.InicialController">
     <stylesheets>
         <URL value="@inicial.css" />
     </stylesheets>
    <children>
-      <AnchorPane layoutX="339.0" layoutY="-1.0" prefHeight="685.0" prefWidth="707.0" style="-fx-background-color: #d3d3d3;">
-         <children>
-            <AnchorPane id="pnServico" fx:id="pnServico" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: black;" />
-            <AnchorPane id="pnReabastecimento" fx:id="pnReabastecimento" layoutX="4.0" layoutY="-1.0" prefHeight="675.0" prefWidth="707.0" style="-fx-background-color: #d3d3d3;">
-               <children>
-                  <DatePicker layoutX="93.0" layoutY="116.0" promptText="DATA" />
-                  <JFXTimePicker layoutX="337.0" layoutY="116.0" promptText="HORA" />
-                  <JFXTextArea fx:id="txtOdometro" layoutX="86.0" layoutY="204.0" prefHeight="33.0" prefWidth="208.0" promptText="Odômetro" />
-                  <ComboBox fx:id="cbCombustivel" layoutX="317.0" layoutY="210.0" prefHeight="25.0" prefWidth="173.0" promptText="Combustível" />
-                  <JFXTextArea fx:id="txtOdometro1" layoutX="58.0" layoutY="272.0" prefHeight="33.0" prefWidth="208.0" promptText="Preço/Litro" />
-                  <JFXTextArea fx:id="txtOdometro11" layoutX="273.0" layoutY="272.0" prefHeight="33.0" prefWidth="208.0" promptText="Custo Total" />
-                  <JFXTextArea fx:id="txtOdometro111" layoutX="490.0" layoutY="272.0" prefHeight="33.0" prefWidth="208.0" promptText="Litros" />
-                  <CheckBox layoutX="65.0" layoutY="343.0" mnemonicParsing="false" text="Você está enchendo o Tanque?" />
-                  <JFXTextArea fx:id="txtOdometro12" layoutX="70.0" layoutY="403.0" prefHeight="33.0" prefWidth="208.0" promptText="Nome do Posto (Opcional)" />
-                  <JFXTextArea fx:id="txtOdometro121" layoutX="294.0" layoutY="403.0" prefHeight="33.0" prefWidth="208.0" promptText="Razão Social do Posto (Opcional)" />
-                  <Button id="btnCarro" layoutX="224.0" layoutY="554.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
-                     <font>
-                        <Font name="Calibri Bold Italic" size="24.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
       <AnchorPane layoutY="-1.0" prefHeight="686.0" prefWidth="295.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <effect>
             <DropShadow />
@@ -52,10 +29,124 @@
             <JFXButton fx:id="btnRenda" graphicTextGap="150.0" layoutY="276.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="RENDA" />
             <JFXButton fx:id="btnRota" graphicTextGap="150.0" layoutY="332.0" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="ROTA" />
             <JFXButton fx:id="btnLembrete" graphicTextGap="150.0" layoutY="388.0" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: gray;" text="LEMBRETE" />
-            <AnchorPane layoutY="1.0" prefHeight="685.0" prefWidth="57.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane layoutY="1.0" prefHeight="685.0" prefWidth="57.0" style="-fx-background-color: #d3d3d3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <effect>
                   <DropShadow />
                </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="339.0" layoutY="-1.0" prefHeight="685.0" prefWidth="707.0" style="-fx-background-color: #d3d3d3;">
+         <children>
+            <AnchorPane fx:id="pnLembrete" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: #d3d3d3;" />
+            <AnchorPane fx:id="pnRota" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <JFXTextArea fx:id="txtOrigem" layoutX="107.0" layoutY="78.0" prefHeight="38.0" prefWidth="546.0" promptText="Local de Origem" />
+                  <JFXTimePicker layoutX="244.0" layoutY="152.0" prefHeight="38.0" prefWidth="188.0" promptText="HORA DA PARTIDA" />
+                  <DatePicker layoutX="39.0" layoutY="152.0" prefHeight="38.0" prefWidth="180.0" promptText="DATA DA PARTIDA" />
+                  <JFXTextArea fx:id="txtOdometro221" layoutX="469.0" layoutY="145.0" prefHeight="45.0" prefWidth="208.0" promptText="Odômetro Inicial" />
+                  <JFXTextArea fx:id="txtOdometro212111" layoutX="109.0" layoutY="279.0" prefHeight="38.0" prefWidth="546.0" promptText="Local deo Destino" />
+                  <JFXTimePicker layoutX="258.0" layoutY="350.0" prefHeight="38.0" prefWidth="188.0" promptText="HORA" />
+                  <DatePicker layoutX="50.0" layoutY="350.0" prefHeight="38.0" prefWidth="180.0" promptText="DATA" />
+                  <JFXTextArea fx:id="txtOdometro2211" layoutX="469.0" layoutY="347.0" prefHeight="45.0" prefWidth="208.0" promptText="Odômetro Final" />
+                  <JFXTextArea fx:id="txtOdometro21111" layoutX="57.0" layoutY="502.0" prefHeight="92.0" prefWidth="597.0" promptText="Notas Opcionais" />
+                  <JFXTextArea fx:id="txtOdometro2212" layoutX="138.0" layoutY="435.0" prefHeight="33.0" prefWidth="208.0" promptText="Valor Km" />
+                  <JFXTextArea fx:id="txtOdometro22121" layoutX="366.0" layoutY="435.0" prefHeight="33.0" prefWidth="208.0" promptText="Total" />
+                  <Button id="btnCarro" layoutX="242.0" layoutY="611.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="305.0" layoutY="14.0" text="Rota" textAlignment="CENTER" textFill="#797777" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ravie" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="pnReabastecimento" fx:id="pnReabastecimento" layoutX="4.0" layoutY="-1.0" prefHeight="675.0" prefWidth="707.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <DatePicker layoutX="110.0" layoutY="143.0" prefHeight="26.0" prefWidth="208.0" promptText="DATA" />
+                  <JFXTimePicker layoutX="382.0" layoutY="143.0" promptText="HORA" />
+                  <JFXTextArea fx:id="txtOdometro" layoutX="110.0" layoutY="214.0" prefHeight="38.0" prefWidth="208.0" promptText="Odômetro" />
+                  <ComboBox fx:id="cbCombustivel" layoutX="377.0" layoutY="214.0" prefHeight="38.0" prefWidth="173.0" promptText="Combustível" />
+                  <JFXTextArea fx:id="txtOdometro1" layoutX="42.0" layoutY="300.0" prefHeight="33.0" prefWidth="208.0" promptText="Preço/Litro" />
+                  <JFXTextArea fx:id="txtOdometro11" layoutX="257.0" layoutY="300.0" prefHeight="33.0" prefWidth="208.0" promptText="Custo Total" />
+                  <JFXTextArea fx:id="txtOdometro111" layoutX="474.0" layoutY="300.0" prefHeight="33.0" prefWidth="208.0" promptText="Litros" />
+                  <CheckBox layoutX="52.0" layoutY="380.0" mnemonicParsing="false" text="Você está enchendo o Tanque?" />
+                  <JFXTextArea fx:id="txtOdometro12" focusColor="#1e45b9" layoutX="53.0" layoutY="439.0" prefHeight="38.0" prefWidth="307.0" promptText="Nome do Posto (Opcional)" unFocusColor="BLACK" />
+                  <JFXTextArea fx:id="txtOdometro121" focusColor="#1e45b9" layoutX="375.0" layoutY="439.0" prefHeight="38.0" prefWidth="295.0" promptText="Razão Social do Posto (Opcional)" unFocusColor="BLACK" />
+                  <Button id="btnCarro" layoutX="224.0" layoutY="554.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="147.0" layoutY="36.0" text="Reabastecimento" textAlignment="CENTER" textFill="#797777" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ravie" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="pnServico" fx:id="pnServico" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <DatePicker layoutX="140.0" layoutY="154.0" promptText="DATA" />
+                  <JFXTimePicker layoutX="384.0" layoutY="154.0" promptText="HORA" />
+                  <JFXTextArea fx:id="txtOdometro2" layoutX="45.0" layoutY="226.0" prefHeight="45.0" prefWidth="208.0" promptText="Odômetro" />
+                  <ComboBox fx:id="cbServico" layoutX="269.0" layoutY="226.0" prefHeight="45.0" prefWidth="173.0" promptText="Tipo de Serviço" />
+                  <JFXTextArea fx:id="txtLugar" layoutX="468.0" layoutY="222.0" prefHeight="45.0" prefWidth="208.0" promptText="Lugar" />
+                  <JFXTextArea fx:id="txtNotas" layoutX="57.0" layoutY="331.0" prefHeight="92.0" prefWidth="597.0" promptText="Notas Opcionais" />
+                  <Button id="btnCarro" layoutX="240.0" layoutY="480.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="285.0" layoutY="40.0" text="Serviço" textAlignment="CENTER" textFill="#797777" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ravie" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnDespesa" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <DatePicker layoutX="146.0" layoutY="145.0" prefHeight="38.0" prefWidth="180.0" promptText="DATA" />
+                  <JFXTimePicker layoutX="390.0" layoutY="145.0" prefHeight="38.0" prefWidth="188.0" promptText="HORA" />
+                  <JFXTextArea fx:id="txtOdometro22" layoutX="52.0" layoutY="243.0" prefHeight="45.0" prefWidth="208.0" promptText="Odômetro" />
+                  <ComboBox fx:id="cbCombustivel11" layoutX="268.0" layoutY="246.0" prefHeight="45.0" prefWidth="173.0" promptText="Tipo de Despesa" />
+                  <JFXTextArea fx:id="txtOdometro212" layoutX="452.0" layoutY="246.0" prefHeight="45.0" prefWidth="208.0" promptText="Razão" />
+                  <JFXTextArea fx:id="txtOdometro2111" layoutX="56.0" layoutY="350.0" prefHeight="92.0" prefWidth="597.0" promptText="Notas Opcionais" />
+                  <Label layoutX="265.0" layoutY="32.0" text="Despesa" textAlignment="CENTER" textFill="#797777" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ravie" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button id="btnCarro" layoutX="241.0" layoutY="494.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnRenda" prefHeight="685.0" prefWidth="711.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <DatePicker layoutX="135.0" layoutY="178.0" promptText="DATA" />
+                  <JFXTimePicker layoutX="379.0" layoutY="178.0" promptText="HORA" />
+                  <JFXTextArea fx:id="txtOdometro21" layoutX="40.0" layoutY="250.0" prefHeight="45.0" prefWidth="208.0" promptText="Odômetro" />
+                  <ComboBox fx:id="cbRenda" layoutX="264.0" layoutY="250.0" prefHeight="45.0" prefWidth="173.0" promptText="Tipo de Renda" />
+                  <JFXTextArea fx:id="txtValor" layoutX="463.0" layoutY="246.0" prefHeight="45.0" prefWidth="208.0" promptText="Valor" />
+                  <JFXTextArea fx:id="txtNotas1" layoutX="52.0" layoutY="355.0" prefHeight="92.0" prefWidth="597.0" promptText="Notas Opcionais" />
+                  <Button id="btnCarro" layoutX="235.0" layoutY="504.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="274.0" layoutY="32.0" text="Renda" textAlignment="CENTER" textFill="#797777" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Ravie" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
             </AnchorPane>
          </children>
       </AnchorPane>

@@ -36,8 +36,16 @@ public class InicialController implements Initializable {
                 if(Event.getSource()== btnServico){
                 pnServico.toFront();
             }
+                if(Event.getSource()== btnDespesa){
+                pnDespesa.toFront();
             }
-            
+                if(Event.getSource()== btnRota){
+                pnRota.toFront();
+            }
+                 if(Event.getSource()== btnRenda){
+                pnRenda.toFront();
+            }
+            }
         }
         
   @FXML
