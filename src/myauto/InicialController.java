@@ -20,30 +20,30 @@ import javafx.scene.layout.AnchorPane;
  */
 public class InicialController implements Initializable {
         @FXML
-        public AnchorPane pnReabastecimento, pnServico, pnDespesa, pnRota, pnRenda,pnLembrete;
+        public AnchorPane pnAbastecimento, pnServico, pnRelatorios, pnRota, pnReceita,pnLembretes;
  @FXML
-        public JFXButton btnReabastecimento, btnServico, btnDespesa,btnRota,btnRenda,btnLembrete;
+        public JFXButton btnAbastecimento, btnServico, btnRelatorios,btnRota,btnReceita,btnLembretes;
     /**
      * Initializes the controller class.
      */
  @FXML
         public void handleButtonAction(ActionEvent Event){
             
-            if(Event.getSource()== btnReabastecimento){
-                pnReabastecimento.toFront();
+            if(Event.getSource()== btnAbastecimento){
+                pnAbastecimento.toFront();
             }
             else{
                 if(Event.getSource()== btnServico){
                 pnServico.toFront();
             }
-                if(Event.getSource()== btnDespesa){
-                pnDespesa.toFront();
+                if(Event.getSource()== btnRelatorios){
+                pnRelatorios.toFront();
             }
-                if(Event.getSource()== btnRota){
-                pnRota.toFront();
+                if(Event.getSource()== btnLembretes ){
+                pnLembretes.toFront();
             }
-                 if(Event.getSource()== btnRenda){
-                pnRenda.toFront();
+                 if(Event.getSource()== btnReceita){
+                pnReceita.toFront();
             }
             }
         }
