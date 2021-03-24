@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -18,42 +19,63 @@ import javafx.scene.layout.AnchorPane;
  *
  * @author kathe
  */
-public class InicialController implements Initializable {
+public class InicialController  {
+    
         @FXML
-        public AnchorPane pnAbastecimento, pnServico, pnRelatorios, pnRota, pnReceita,pnLembretes;
- @FXML
-        public JFXButton btnAbastecimento, btnServico, btnRelatorios,btnRota,btnReceita,btnLembretes;
+        public AnchorPane pnAbastecimento, pnServico, pnRelatorios, pnRota, pnReceita,pnLembretes, pnMenu, pnAba;
+         //pnMenu.setVisible(false);
+        @FXML
+        public JFXButton btnAbastecimento, btnServico, btnRelatorios,btnRota,btnReceita,btnLembretes, bntAba, btnClose;
+        
+        @FXML
+         public ComboBox cbCombustivel;
+        
+        
+         public  void initialize() {
+             cbCombustivel.getItems().addAll("Etanol", "Gasolina Comum", "Gasolina Aditivada", "Diesel");
+     
+    }    
     /**
      * Initializes the controller class.
+     * @param <error>
+     * @return 
      */
+ 
+       
  @FXML
-        public void handleButtonAction(ActionEvent Event){
+        public void handleButtonAction(ActionEvent event){
             
-            if(Event.getSource()== btnAbastecimento){
+            if(event.getSource()== btnAbastecimento){
                 pnAbastecimento.toFront();
             }
             else{
-                if(Event.getSource()== btnServico){
+                if(event.getSource()== btnServico){
                 pnServico.toFront();
             }
-                if(Event.getSource()== btnRelatorios){
+                if(event.getSource()== btnRelatorios){
                 pnRelatorios.toFront();
             }
-                if(Event.getSource()== btnLembretes ){
+                if(event.getSource()== btnLembretes ){
                 pnLembretes.toFront();
             }
-                 if(Event.getSource()== btnReceita){
+                 if(event.getSource()== btnReceita){
                 pnReceita.toFront();
             }
+                 if (event.getSource()==bntAba){
+                     pnMenu.setVisible(true);
+                 }
+                  if (event.getSource()==btnClose){
+                     pnMenu.setVisible(false);
+                 }
+                
             }
         }
         
   @FXML
          
-         
-    @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+            // TODO
     }    
+    
     
 }

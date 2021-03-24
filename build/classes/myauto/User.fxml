@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="855.0" style="-fx-background-color: #d3d3d3;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="myauto.UserController">
+    <stylesheets>
+        <URL value="@user.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="pnCriar" prefHeight="810.0" prefWidth="855.0" style="-fx-background-color: #d3d3d3;">
+         <children>
+            <Label layoutX="273.0" layoutY="53.0" text="Criar conta MyAuto" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="189.0" text="Nome" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="500.0" layoutY="189.0" text="Sobrenome" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="70.0" layoutY="236.0" prefHeight="36.0" prefWidth="277.0" promptText="Primeiro Nome" />
+            <JFXTextArea layoutX="414.0" layoutY="236.0" prefHeight="36.0" prefWidth="339.0" promptText="Último nome" />
+            <JFXTextArea layoutX="182.0" layoutY="354.0" prefHeight="36.0" prefWidth="492.0" promptText="Primeiro Nome" />
+            <Label layoutX="383.0" layoutY="319.0" text="Email" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="182.0" layoutY="477.0" prefHeight="36.0" prefWidth="492.0" promptText="*********************" text="********************" />
+            <Label layoutX="380.0" layoutY="436.0" text="Senha" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="182.0" layoutY="590.0" prefHeight="36.0" prefWidth="492.0" promptText="*********************" text="********************" />
+            <Label layoutX="354.0" layoutY="545.0" text="Repita Senha" textFill="#1b1a1a">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="hpPossue" alignment="CENTER" layoutX="349.0" layoutY="725.0" prefHeight="34.0" prefWidth="158.0" text="Já possue conta?" textFill="#1b1919" />
+            <Button id="btnLogin" fx:id="btnCriar" layoutX="353.0" layoutY="666.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="168.0" text="Criar Conta" textAlignment="CENTER" textFill="#330eb9">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnLogin" prefHeight="810.0" prefWidth="855.0" style="-fx-background-color: #d3d3d3;">
+         <children>
+            <Label layoutX="386.0" layoutY="46.0" text="Login" textFill="#171717">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="204.0" layoutY="281.0" prefHeight="35.0" prefWidth="449.0" promptText="ex: nome@xxxx.com.br" />
+            <JFXTextArea layoutX="203.0" layoutY="440.0" prefHeight="35.0" prefWidth="449.0" promptText="****************************" />
+            <Label layoutX="402.0" layoutY="194.0" text="Email" textFill="#171717">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="396.0" layoutY="370.0" text="Senha" textFill="#171717">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button id="btnLogin" fx:id="btnAcessar" layoutX="344.0" layoutY="594.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="168.0" text="Acessar" textAlignment="CENTER" textFill="#330eb9">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="hpEsquecer" alignment="CENTER" layoutX="354.0" layoutY="667.0" prefHeight="34.0" prefWidth="158.0" text="Esqueceu sua senha?" textFill="#1b1919" />
+            <Hyperlink fx:id="hpCriar" alignment="CENTER" layoutX="350.0" layoutY="701.0" prefHeight="34.0" prefWidth="158.0" text="Criar conta" textFill="#1b1919" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
