@@ -9,26 +9,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1049.0" style="-fx-background-color: #d3d3d3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myauto.VeiculosController">
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #d3d3d3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myauto.VeiculosController">
     <stylesheets>
         <URL value="@veiculos.css" />
     </stylesheets>
    <children>
-      <Button id="btnCarro" fx:id="btnRegistrar" layoutX="419.0" layoutY="448.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR">
+      <Button id="btnCarro" fx:id="btnRegistrar" layoutX="348.0" layoutY="556.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="227.0" text="REGISTRAR" AnchorPane.leftAnchor="348.0" AnchorPane.topAnchor="556.0">
          <font>
-            <Font name="Calibri Bold Italic" size="24.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <ComboBox fx:id="cbVeiculo" layoutX="32.0" layoutY="249.0" prefWidth="150.0" promptText="Tipo de Veículo " />
-      <ComboBox fx:id="cbFabricante" layoutX="212.0" layoutY="249.0" prefWidth="150.0" promptText="Fabricante" />
-      <ComboBox fx:id="cbModelo" layoutX="382.0" layoutY="249.0" prefWidth="150.0" promptText="Modelo" />
-      <ComboBox fx:id="cbDistancia" layoutX="564.0" layoutY="249.0" prefHeight="25.0" prefWidth="173.0" promptText="Unidade de Distância" />
-      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="2.0" layoutY="50.0" prefHeight="17.0" prefWidth="1049.0" text="Sobre seu veículo" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="50.0">
+      <ComboBox fx:id="cbVeiculo" layoutX="392.0" layoutY="170.0" prefHeight="28.0" prefWidth="160.0" promptText="Tipo de Veículo " AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="170.0" />
+      <ComboBox fx:id="cbFabricante" layoutX="470.0" layoutY="206.0" prefHeight="28.0" prefWidth="160.0" promptText="Fabricante" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="230.0" />
+      <ComboBox fx:id="cbModelo" layoutX="566.0" layoutY="246.0" prefHeight="28.0" prefWidth="160.0" promptText="Modelo" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="290.0" />
+      <ComboBox fx:id="cbDistancia" layoutX="807.0" layoutY="301.0" prefHeight="28.0" prefWidth="160.0" promptText="Unidade de Distância" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="350.0" />
+      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="-3.0" layoutY="45.0" prefHeight="17.0" prefWidth="1049.0" text="Sobre seu veículo" textAlignment="CENTER" textFill="#797777" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="587.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="45.0">
          <font>
-            <Font size="36.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <JFXTextArea fx:id="txtVeiculo" layoutX="792.0" layoutY="239.0" prefHeight="45.0" prefWidth="180.0" promptText="Apelido do Veículo" />
+      <JFXTextArea fx:id="txtVeiculo" layoutX="412.0" layoutY="367.0" prefHeight="28.0" prefWidth="180.0" promptText="Apelido do Veículo" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="410.0" />
    </children>
    <opaqueInsets>
       <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
