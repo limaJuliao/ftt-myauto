@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
@@ -13,40 +14,23 @@
         <URL value="@usuarios.css" />
     </stylesheets>
    <children>
-      <AnchorPane fx:id="pnLogin" prefHeight="798.0" prefWidth="998.0" style="-fx-background-color: #d3d3d3;">
+      <AnchorPane fx:id="pnVeiculos" prefHeight="798.0" prefWidth="998.0" style="-fx-background-color: #d3d3d3;">
          <children>
-            <Label layoutX="454.0" layoutY="47.0" text="Login" textFill="#1e1e1e">
+            <Label layoutX="357.0" layoutY="49.0" text="Sobre seu Veículo">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font size="36.0" />
                </font>
             </Label>
-            <Label layoutX="468.0" layoutY="215.0" text="Email" textFill="#1e1e1e">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="465.0" layoutY="382.0" text="Senha" textFill="#1e1e1e">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <JFXTextArea layoutX="254.0" layoutY="279.0" prefHeight="28.0" prefWidth="498.0" promptText="nome@xxxxx.com.br">
+            <JFXComboBox fx:id="cbVeiculo" layoutX="14.0" layoutY="274.0" prefHeight="25.0" prefWidth="184.0" promptText="Tipo de Veículo" />
+            <JFXComboBox fx:id="cbFabricante" layoutX="213.0" layoutY="274.0" prefHeight="25.0" prefWidth="184.0" promptText="Fabricante" />
+            <JFXComboBox fx:id="cbModelo" layoutX="418.0" layoutY="274.0" prefHeight="25.0" prefWidth="184.0" promptText="Modelo" />
+            <JFXComboBox fx:id="cbDistancia" layoutX="617.0" layoutY="274.0" prefHeight="25.0" prefWidth="184.0" promptText="Unidade de Distância" />
+            <JFXTextArea layoutX="816.0" layoutY="262.0" prefHeight="36.0" prefWidth="176.0" promptText="Apelodo do Veículo" />
+            <Button fx:id="btnRegistrar" layoutX="425.0" layoutY="503.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="148.0" text="Registrar">
                <font>
                   <Font size="14.0" />
-               </font>
-            </JFXTextArea>
-            <JFXTextArea layoutX="250.0" layoutY="445.0" prefHeight="28.0" prefWidth="498.0" promptText="************************">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXTextArea>
-            <Button fx:id="btnAcessar" layoutX="440.0" layoutY="584.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="133.0" text="Acessar">
-               <font>
-                  <Font size="18.0" />
                </font>
             </Button>
-            <Hyperlink fx:id="hpEsquecer" layoutX="451.0" layoutY="655.0" onAction="#handleButtonAction" text="Esqueceu sua senha?" textFill="#240cb2" />
-            <Hyperlink fx:id="hpCriar" layoutX="477.0" layoutY="678.0" onAction="#handleButtonAction" text="Criar Conta" textFill="#240cb2" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="pnCriar" prefHeight="798.0" prefWidth="998.0" style="-fx-background-color: #d3d3d3;">
@@ -86,7 +70,7 @@
             </Label>
             <JFXTextArea layoutX="45.0" layoutY="525.0" prefHeight="23.0" prefWidth="341.0" promptText="******************************" />
             <JFXTextArea layoutX="559.0" layoutY="525.0" prefHeight="23.0" prefWidth="341.0" promptText="************************" />
-            <Button fx:id="btnCriar" layoutX="392.0" layoutY="594.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="176.0" text="Criar Conta">
+            <Button fx:id="btnCriar" layoutX="392.0" layoutY="594.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="176.0" text="Criar Conta">
                <font>
                   <Font size="18.0" />
                </font>
@@ -96,6 +80,42 @@
                   <Font size="14.0" />
                </font>
             </Hyperlink>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnLogin" prefHeight="798.0" prefWidth="998.0" style="-fx-background-color: #d3d3d3;">
+         <children>
+            <Label layoutX="454.0" layoutY="47.0" text="Login" textFill="#1e1e1e">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="468.0" layoutY="215.0" text="Email" textFill="#1e1e1e">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="465.0" layoutY="382.0" text="Senha" textFill="#1e1e1e">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="254.0" layoutY="279.0" prefHeight="28.0" prefWidth="498.0" promptText="nome@xxxxx.com.br">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextArea layoutX="250.0" layoutY="445.0" prefHeight="28.0" prefWidth="498.0" promptText="************************">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextArea>
+            <Button fx:id="btnAcessar" layoutX="440.0" layoutY="584.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="133.0" text="Acessar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="hpEsquecer" layoutX="451.0" layoutY="655.0" onAction="#handleButtonAction" text="Esqueceu sua senha?" textFill="#240cb2" />
+            <Hyperlink fx:id="hpCriar" layoutX="477.0" layoutY="678.0" onAction="#handleButtonAction" text="Criar Conta" textFill="#240cb2" />
          </children>
       </AnchorPane>
    </children>
