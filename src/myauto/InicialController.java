@@ -22,10 +22,10 @@ import javafx.scene.layout.AnchorPane;
 public class InicialController  {
     
         @FXML
-        public AnchorPane pnAbastecimento, pnServico, pnRelatorios, pnRota, pnReceita,pnLembretes, pnMenu, pnAba;
+        public AnchorPane pnAbastecimento, pnServico, pnRelatorios, pnRota, pnReceita, pnDespesa, pnLembretes, pnMenu, pnAba;
          //pnMenu.setVisible(false);
         @FXML
-        public JFXButton btnAbastecimento, btnServico, btnRelatorios,btnRota,btnReceita,btnLembretes, bntAba, btnClose;
+        public JFXButton btnAbastecimento, btnServico, btnRelatorios,btnRota,btnReceita,btnDespesa,btnLembretes, bntAba, btnClose;
         
         @FXML
          public ComboBox cbCombustivel;
@@ -58,9 +58,12 @@ public class InicialController  {
                 if(event.getSource()== btnLembretes ){
                 pnLembretes.toFront();
             }
-                 if(event.getSource()== btnReceita){
+                if(event.getSource()== btnReceita){
                 pnReceita.toFront();
             }
+                if(event.getSource()== btnDespesa){
+                pnDespesa.toFront();
+            }                 
                  if (event.getSource()==bntAba){
                      pnMenu.setVisible(true);
                  }

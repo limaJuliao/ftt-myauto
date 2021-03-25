@@ -14,6 +14,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.layout.AnchorPane;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
+import static java.awt.SystemColor.window;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -33,7 +34,7 @@ public class UsuariosController {
     @FXML
         public AnchorPane pnLogin, pnCriar, pnVeiculos;
     @FXML
-        public Button btnCriar, btnAcessar, btnRegistrar;
+        public Button btnCriar, btnAcessar, btnRegistrar, btnVoltarCriar, btnVoltarLogin;
    
     
     @FXML
@@ -48,7 +49,7 @@ public class UsuariosController {
      cbVeiculo.getItems().addAll("Carro", "Motocicleta", "Ônibus", "Caminhão");
      cbFabricante.getItems().addAll("Fiat", "Mercedez", "Volkswagen", "Chevrolet");
      cbModelo.getItems().addAll("Astra", "Palio", "Gol", "Fox");
-       cbDistancia.getItems().addAll("Quilômetro", "Milhas" );
+     cbDistancia.getItems().addAll("Quilômetro", "Milhas" );
     // cbVeiculo.getSelectionModel().select("Option B");
      
     }    
@@ -64,6 +65,12 @@ public class UsuariosController {
            if(event.getSource()== btnCriar){
                 pnVeiculos.toFront();
             }
+           if(event.getSource()== btnVoltarCriar){
+               pnCriar.toFront();
+            }
+           if(event.getSource()== btnVoltarLogin){
+               pnLogin.toFront();
+            }             
         }
     /**
      * Initializes the controller class.
