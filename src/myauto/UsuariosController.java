@@ -23,7 +23,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
@@ -53,9 +57,18 @@ public class UsuariosController {
     // cbVeiculo.getSelectionModel().select("Option B");
      
     }    
-     
+      public void start() throws Exception {
+        //Parent root = FXMLLoader.load(getClass().getResource("Usuarios.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Usuarios.fxml"));
+        Stage stage= new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.close();
+        
+        }
+        
     @FXML
-        public void handleButtonAction(ActionEvent event){
+        public void handleButtonAction(ActionEvent event) throws IOException, Exception{
             if(event.getSource()== hpPossui){
                 pnLogin.toFront();
             }
@@ -70,7 +83,24 @@ public class UsuariosController {
             }
            if(event.getSource()== btnVoltarLogin){
                pnLogin.toFront();
-            }             
+            }
+           if(event.getSource()== btnAcessar){
+                Parent root = FXMLLoader.load(getClass().getResource("Inicial.fxml"));
+                Stage stage= new Stage();
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+                start();
+            }
+           if(event.getSource()== btnCriar){
+                Parent root = FXMLLoader.load(getClass().getResource("Inicial.fxml"));
+                Stage stage= new Stage();
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+                start();
+                
+            }
         }
     /**
      * Initializes the controller class.
