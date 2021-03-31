@@ -57,6 +57,7 @@ public class UsuariosController {
     // cbVeiculo.getSelectionModel().select("Option B");
      
     }    
+        @FXML
       public void start() throws Exception {
         //Parent root = FXMLLoader.load(getClass().getResource("Usuarios.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("Usuarios.fxml"));

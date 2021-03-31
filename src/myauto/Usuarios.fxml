@@ -14,71 +14,7 @@
         <URL value="@usuarios.css" />
     </stylesheets>
    <children>
-      <AnchorPane fx:id="pnVeiculos" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #FF6A6A;">
-         <children>
-            <Label layoutX="278.0" layoutY="29.0" text="Cadastre seu veículo" textFill="#1c1c1c" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="50.0">
-               <font>
-                  <Font name="Dubai Medium" size="48.0" />
-               </font>
-            </Label>
-            <JFXComboBox fx:id="cbVeiculo" layoutX="378.0" layoutY="104.0" prefHeight="28.0" prefWidth="170.0" promptText="Tipo de Veículo" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="104.0" />
-            <JFXComboBox fx:id="cbFabricante" layoutX="378.0" layoutY="145.0" prefHeight="28.0" prefWidth="170.0" promptText="Fabricante" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="145.0" />
-            <JFXComboBox fx:id="cbModelo" layoutX="378.0" layoutY="180.0" prefHeight="28.0" prefWidth="170.0" promptText="Modelo" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="180.0" />
-            <JFXComboBox fx:id="cbDistancia" layoutX="378.0" layoutY="215.0" prefHeight="28.0" prefWidth="170.0" promptText="Unidade de Distância" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="215.0" />
-            <Button fx:id="btnRegistrar" layoutX="393.0" layoutY="529.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Registrar" AnchorPane.topAnchor="530.0">
-               <font>
-                  <Font name="Dubai Medium" size="24.0" />
-               </font>
-            </Button>
-            <JFXTextArea layoutX="378.0" layoutY="315.0" prefHeight="28.0" prefWidth="170.0" promptText="Apelido do Veículo" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="315.0" />
-            <Hyperlink fx:id="hpPossui" layoutX="401.0" layoutY="595.0" onAction="#handleButtonAction" text="Já possui conta?" textFill="#1c1c1c" AnchorPane.topAnchor="600.0">
-               <font>
-                  <Font name="Dubai Medium" size="18.0" />
-               </font>
-            </Hyperlink>
-            <Button fx:id="btnVoltarCriar" layoutX="28.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="120.0" text="Voltar" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
-               <font>
-                  <Font name="Dubai Medium" size="14.0" />
-               </font>
-            </Button>
-            <JFXComboBox fx:id="cbVeiculo1" layoutX="378.0" layoutY="243.0" prefHeight="28.0" prefWidth="170.0" promptText="Tipo de Combustível" />
-            <JFXComboBox fx:id="cbVeiculo11" layoutX="378.0" layoutY="279.0" prefHeight="28.0" prefWidth="170.0" promptText="Ano" />
-            <JFXTextArea layoutX="378.0" layoutY="358.0" prefHeight="28.0" prefWidth="170.0" promptText="Volume do Tanque" />
-            <JFXTextArea layoutX="378.0" layoutY="394.0" prefHeight="28.0" prefWidth="170.0" promptText="Placa" />
-            <JFXTextArea layoutX="378.0" layoutY="439.0" prefHeight="25.0" prefWidth="170.0" promptText="Renavan" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="pnCriar" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #FF6A6A;" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label layoutX="299.0" layoutY="48.0" text="Criar conta MyAuto" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="50.0">
-               <font>
-                  <Font name="Dubai Medium" size="48.0" />
-               </font>
-            </Label>
-            <JFXTextArea layoutX="45.0" layoutY="245.0" prefHeight="28.0" prefWidth="350.0" promptText="Primeiro Nome" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="220.0" />
-            <JFXTextArea layoutX="480.0" layoutY="245.0" prefHeight="28.0" prefWidth="370.0" promptText="Último nome" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="220.0" />
-            <JFXTextArea layoutX="231.0" layoutY="381.0" prefHeight="28.0" prefWidth="350.0" promptText="(Email) *****@*****.com" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="330.0" />
-            <JFXTextArea layoutX="45.0" layoutY="525.0" prefHeight="28.0" prefWidth="380.0" promptText="(Senha) * * * * * * * * * *" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="450.0" />
-            <JFXTextArea layoutX="559.0" layoutY="525.0" prefHeight="28.0" prefWidth="370.0" promptText="(Confirme senha) * * * * * * * * * *" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="450.0" />
-            <JFXTextArea layoutX="558.0" layoutY="363.0" prefHeight="28.0" prefWidth="370.0" promptText="(Confirme email) *****@*****.com" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="330.0" />
-            <Button fx:id="btnCriar" layoutX="376.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="176.0" text="Criar conta" AnchorPane.topAnchor="560.0">
-               <font>
-                  <Font name="Dubai Medium" size="24.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnVoltarLogin" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="120.0" text="Voltar" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
-               <font>
-                  <Font name="Dubai Medium" size="14.0" />
-               </font>
-            </Button>
-            <Hyperlink fx:id="hpPossui" layoutX="397.0" layoutY="628.0" onAction="#handleButtonAction" text="Já possui conta?" textFill="#1c1c1c">
-               <font>
-                  <Font name="Dubai Medium" size="18.0" />
-               </font>
-            </Hyperlink>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="pnLogin" onDragDetected="#handleButtonAction" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #FF6A6A;">
+      <AnchorPane fx:id="pnLogin" onDragDetected="#handleButtonAction" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #FF6A6A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="433.0" layoutY="114.0" text="Login" textFill="#1e1e1e" AnchorPane.topAnchor="130.0">
                <font>
@@ -115,6 +51,70 @@
                   <Font name="Dubai Medium" size="48.0" />
                </font>
             </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnCriar" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #FF6A6A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="299.0" layoutY="48.0" text="Criar conta MyAuto" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Dubai Medium" size="48.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="45.0" layoutY="245.0" prefHeight="28.0" prefWidth="350.0" promptText="Primeiro Nome" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="220.0" />
+            <JFXTextArea layoutX="480.0" layoutY="245.0" prefHeight="28.0" prefWidth="370.0" promptText="Último nome" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="220.0" />
+            <JFXTextArea layoutX="231.0" layoutY="381.0" prefHeight="28.0" prefWidth="350.0" promptText="(Email) *****@*****.com" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="330.0" />
+            <JFXTextArea layoutX="45.0" layoutY="525.0" prefHeight="28.0" prefWidth="380.0" promptText="(Senha) * * * * * * * * * *" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="450.0" />
+            <JFXTextArea layoutX="559.0" layoutY="525.0" prefHeight="28.0" prefWidth="370.0" promptText="(Confirme senha) * * * * * * * * * *" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="450.0" />
+            <JFXTextArea layoutX="558.0" layoutY="363.0" prefHeight="28.0" prefWidth="370.0" promptText="(Confirme email) *****@*****.com" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="330.0" />
+            <Button fx:id="btnCriar" layoutX="376.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="176.0" text="Criar conta" AnchorPane.topAnchor="560.0">
+               <font>
+                  <Font name="Dubai Medium" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnVoltarLogin" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="120.0" text="Voltar" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="hpPossui" layoutX="397.0" layoutY="628.0" onAction="#handleButtonAction" text="Já possui conta?" textFill="#1c1c1c">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnVeiculos" prefHeight="685.0" prefWidth="925.0" style="-fx-background-color: #FF6A6A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="278.0" layoutY="29.0" text="Cadastre seu veículo" textFill="#1c1c1c" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="Dubai Medium" size="48.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cbVeiculo" layoutX="378.0" layoutY="104.0" prefHeight="28.0" prefWidth="170.0" promptText="Tipo de Veículo" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="104.0" />
+            <JFXComboBox fx:id="cbFabricante" layoutX="378.0" layoutY="145.0" prefHeight="28.0" prefWidth="170.0" promptText="Fabricante" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="145.0" />
+            <JFXComboBox fx:id="cbModelo" layoutX="378.0" layoutY="180.0" prefHeight="28.0" prefWidth="170.0" promptText="Modelo" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="180.0" />
+            <JFXComboBox fx:id="cbDistancia" layoutX="378.0" layoutY="215.0" prefHeight="28.0" prefWidth="170.0" promptText="Unidade de Distância" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="215.0" />
+            <Button fx:id="btnRegistrar" layoutX="393.0" layoutY="529.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Registrar" AnchorPane.topAnchor="530.0">
+               <font>
+                  <Font name="Dubai Medium" size="24.0" />
+               </font>
+            </Button>
+            <JFXTextArea fx:id="txtApelido" layoutX="378.0" layoutY="315.0" prefHeight="28.0" prefWidth="170.0" promptText="Apelido do Veículo" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="315.0" />
+            <Hyperlink fx:id="hpPossui" layoutX="401.0" layoutY="595.0" onAction="#handleButtonAction" text="Já possui conta?" textFill="#1c1c1c" AnchorPane.topAnchor="600.0">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="btnVoltarCriar" layoutX="28.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="120.0" text="Voltar" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </Button>
+            <JFXComboBox fx:id="cbCombustivel" layoutX="378.0" layoutY="243.0" prefHeight="28.0" prefWidth="170.0" promptText="Tipo de Combustível" />
+            <JFXComboBox fx:id="cbAno" layoutX="378.0" layoutY="279.0" prefHeight="28.0" prefWidth="170.0" promptText="Ano" />
+            <JFXTextArea fx:id="txtVolume" layoutX="378.0" layoutY="358.0" prefHeight="28.0" prefWidth="170.0" promptText="Volume do Tanque" />
+            <JFXTextArea fx:id="txtPlaca" layoutX="378.0" layoutY="394.0" prefHeight="28.0" prefWidth="170.0" promptText="Placa" />
+            <JFXTextArea fx:id="txtRenavan" layoutX="378.0" layoutY="439.0" prefHeight="25.0" prefWidth="170.0" promptText="Renavan" />
          </children>
       </AnchorPane>
    </children>
