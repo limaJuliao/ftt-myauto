@@ -53,7 +53,7 @@ public class UsuariosController {
      cbVeiculo.getItems().addAll("Carro", "Motocicleta", "Ônibus", "Caminhão");
      cbFabricante.getItems().addAll("Fiat", "Mercedez", "Volkswagen", "Chevrolet");
      cbModelo.getItems().addAll("Astra", "Palio", "Gol", "Fox");
-     cbDistancia.getItems().addAll("Quilômetro", "Milhas" );
+     //cbDistancia.getItems().addAll("Quilômetro", "Milhas" );
     // cbVeiculo.getSelectionModel().select("Option B");
      
     }    

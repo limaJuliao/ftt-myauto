@@ -20,6 +20,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -200,40 +201,6 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="pnLembretes" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <Label layoutX="265.0" layoutY="32.0" text="Lembretes" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
-                     <font>
-                        <Font name="Dubai Medium" size="48.0" />
-                     </font>
-                  </Label>
-                  <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="430.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="550.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
-                  <TableView layoutX="558.0" layoutY="135.0" prefHeight="420.0" prefWidth="330.0" AnchorPane.leftAnchor="630.0" AnchorPane.topAnchor="140.0">
-                    <columns>
-                      <TableColumn prefWidth="138.0" text="Data/Odômetro" />
-                      <TableColumn prefWidth="198.0" text="Descrição" />
-                    </columns>
-                  </TableView>
-                  <JFXComboBox layoutX="40.0" layoutY="144.0" promptText="Tipo de Despesa" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="160.0" />
-                  <JFXToggleButton fx:id="tgFreqUnica" layoutX="216.0" layoutY="143.0" onAction="#handleButtonAction" text="Apenas uma vez" />
-                  <JFXToggleButton fx:id="tgFrequentemente" layoutX="379.0" layoutY="143.0" onAction="#handleButtonAction" text="Frequentemente" />
-                  <JFXToggleButton fx:id="tgQuilometragem1" layoutX="52.0" layoutY="214.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Km" AnchorPane.leftAnchor="50.0" />
-                  <JFXToggleButton fx:id="tgFrequencia1" layoutX="159.0" layoutY="242.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Data" AnchorPane.leftAnchor="140.0" />
-                  <JFXTextArea fx:id="txtOdometro1" layoutX="90.0" layoutY="371.0" prefHeight="38.0" prefWidth="147.0" promptText="Km" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="360.0" />
-                  <JFXDatePicker fx:id="dtFreq1" layoutX="372.0" layoutY="372.0" prefHeight="26.0" prefWidth="160.0" promptText="Data de Início" AnchorPane.leftAnchor="270.0" />
-                  <JFXComboBox fx:id="cbFreq" layoutX="443.0" layoutY="257.0" />
-                  <JFXTextArea fx:id="txtQtd" layoutX="431.0" layoutY="244.0" prefHeight="38.0" prefWidth="92.0" promptText="Quantidade" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="250.0" />
-                  <JFXToggleButton fx:id="tgQuilometragem" layoutX="133.0" layoutY="214.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Km" AnchorPane.leftAnchor="140.0" />
-                  <JFXToggleButton fx:id="tgFrequencia" layoutX="62.0" layoutY="243.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Data" AnchorPane.leftAnchor="50.0" />
-                  <JFXTextArea fx:id="txtOdometro" layoutX="60.0" layoutY="307.0" prefHeight="38.0" prefWidth="147.0" promptText="Odometro" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="300.0" />
-                  <JFXDatePicker fx:id="dtFreq" layoutX="381.0" layoutY="315.0" prefHeight="26.0" prefWidth="160.0" promptText="Data" AnchorPane.leftAnchor="270.0" />
-                  <Button id="btnCarro" fx:id="btnRegistrar2" layoutX="161.0" layoutY="496.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="200.0" text="Registrar" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="490.0">
-                     <font>
-                        <Font name="Dubai Medium" size="18.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
             <AnchorPane fx:id="pnReceita" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="303.0" layoutY="44.0" text="Receita" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
@@ -259,6 +226,42 @@
                         <TableColumn prefWidth="198.0" text="Descrição" />
                      </columns>
                   </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnLembretes" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="265.0" layoutY="32.0" text="Lembretes" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="Dubai Medium" size="48.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="430.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="550.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
+                  <TableView layoutX="558.0" layoutY="135.0" prefHeight="420.0" prefWidth="330.0" AnchorPane.leftAnchor="630.0" AnchorPane.topAnchor="140.0">
+                    <columns>
+                      <TableColumn prefWidth="138.0" text="Data/Odômetro" />
+                      <TableColumn prefWidth="198.0" text="Descrição" />
+                    </columns>
+                  </TableView>
+                  <JFXComboBox layoutX="40.0" layoutY="144.0" promptText="Tipo de Despesa" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="160.0" />
+                  <JFXToggleButton fx:id="tgFreqUnica" layoutX="216.0" layoutY="143.0" onAction="#handleButtonAction" text="Apenas uma vez" />
+                  <JFXToggleButton fx:id="tgFrequentemente" layoutX="379.0" layoutY="143.0" onAction="#handleButtonAction" text="Frequentemente" />
+                  <JFXToggleButton fx:id="tgQuilometragem1" layoutX="431.0" layoutY="191.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Km" AnchorPane.leftAnchor="431.0" />
+                  <JFXToggleButton fx:id="tgFrequencia1" layoutX="430.0" layoutY="219.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Data" AnchorPane.leftAnchor="430.0" />
+                  <JFXTextArea fx:id="txtOdometro1" layoutX="90.0" layoutY="371.0" prefHeight="38.0" prefWidth="147.0" promptText="Km" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="360.0" />
+                  <JFXDatePicker fx:id="dtFreq1" layoutX="372.0" layoutY="372.0" prefHeight="26.0" prefWidth="160.0" promptText="Data de Início" AnchorPane.leftAnchor="270.0" />
+                  <JFXComboBox fx:id="cbFreq" layoutX="443.0" layoutY="257.0" />
+                  <JFXTextArea fx:id="txtQtd" layoutX="431.0" layoutY="244.0" prefHeight="38.0" prefWidth="92.0" promptText="Quantidade" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="250.0" />
+                  <JFXToggleButton fx:id="tgQuilometragem" layoutX="247.0" layoutY="193.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Km" AnchorPane.leftAnchor="247.0" />
+                  <JFXTextArea fx:id="txtOdometro" layoutX="60.0" layoutY="307.0" prefHeight="38.0" prefWidth="147.0" promptText="Odometro" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="300.0" />
+                  <JFXDatePicker fx:id="dtFreq" layoutX="381.0" layoutY="315.0" prefHeight="26.0" prefWidth="160.0" promptText="Data" AnchorPane.leftAnchor="270.0" />
+                  <Button id="btnCarro" fx:id="btnRegistrar2" layoutX="161.0" layoutY="496.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="200.0" text="Registrar" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="490.0">
+                     <font>
+                        <Font name="Dubai Medium" size="18.0" />
+                     </font>
+                  </Button>
+                  <Pane fx:id="pnFrequentemente" layoutX="380.0" layoutY="292.0" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="pnUnica" layoutX="87.0" layoutY="348.0" prefHeight="200.0" prefWidth="200.0" />
+                  <JFXToggleButton fx:id="tgFrequencia" layoutX="128.0" layoutY="220.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="113.0" text="Data" />
                </children>
             </AnchorPane>
          </children>
