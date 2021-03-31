@@ -24,8 +24,8 @@ import javafx.stage.Stage;
 public class MyAuto extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        //Parent root = FXMLLoader.load(getClass().getResource("Usuarios.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("Inicial.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Usuarios.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("Inicial.fxml"));
         
         Scene scene = new Scene(root);
         
