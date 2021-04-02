@@ -28,7 +28,7 @@
             <JFXTextArea layoutX="370.0" layoutY="234.0" prefHeight="28.0" prefWidth="300.0" promptText="Seu email" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="230.0" />
             <JFXTextArea layoutX="406.0" layoutY="374.0" prefHeight="28.0" prefWidth="300.0" promptText="Digite uma senha" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="290.0" />
             <JFXTextArea layoutX="402.0" layoutY="417.0" prefHeight="28.0" prefWidth="300.0" promptText="Repita a senha" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="350.0" />
-            <Button fx:id="btnCriar" layoutX="376.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="300.0" text="Criar conta" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="480.0">
+            <Button fx:id="btnCriar" layoutX="376.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="300.0" text="Cadastrar veículo" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="480.0">
                <font>
                   <Font name="Dubai Medium" size="24.0" />
                </font>

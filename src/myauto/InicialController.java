@@ -45,7 +45,7 @@ public class InicialController  {
         public JFXButton btnAbastecimento, btnServico, btnRelatorios,btnRota,btnReceita,btnDespesa,btnLembretes, bntAba, btnClose;
         
         @FXML
-         public ComboBox cbCombustivel, cbFreq;
+         public ComboBox cbCombustivel, cbMotivoDespesa, cbTipoDespesa, cbFreq;
         
          @FXML
          public Button btnRegistrar2;
@@ -53,14 +53,16 @@ public class InicialController  {
         
          public  void initialize() {
              cbCombustivel.getItems().addAll("Etanol", "Gasolina Comum", "Gasolina Aditivada", "Diesel");
-             cbFreq.getItems().addAll("Ano", "Mês", "Dia");
-             btnRegistrar2.setVisible(false);
+             cbMotivoDespesa.getItems().addAll("Trabalho", "Passeio", "Obrigatória", "Melhoria","Outro");
+             cbTipoDespesa.getItems().addAll("Impostos", "Pedágios", "Passaportes", "Outro");
+             cbFreq.getItems().addAll("Anos", "Meses", "Dias");
+             btnRegistrar2.setVisible(true);
            
               pnUnica.setVisible(false);
-              dtFreq.setVisible(false);
-              txtOdometro.setVisible(false);
-              tgQuilometragem.setVisible(false);
-             tgFrequencia.setVisible(false);
+              //dtFreq.setVisible(false);
+              //txtOdometro.setVisible(false);
+              //tgQuilometragem.setVisible(false);
+             //tgFrequencia.setVisible(false);
              
               tgQuilometragem1.setVisible(false);
               tgFrequencia1.setVisible(false);
@@ -116,7 +118,7 @@ public class InicialController  {
                  }
                         else{
                             pnUnica.setVisible(false);
-                             btnRegistrar2.setVisible(false);
+                             btnRegistrar2.setVisible(true);
                     tgQuilometragem.setVisible(false);
              tgFrequencia.setVisible(false);
                         }                    
@@ -149,7 +151,7 @@ public class InicialController  {
                           pnFrequentemente.setVisible(false);
                     tgQuilometragem1.setVisible(false);
                     tgFrequencia1.setVisible(false);
-                     btnRegistrar2.setVisible(false);
+                     btnRegistrar2.setVisible(true);
                      }
                  }
                    
