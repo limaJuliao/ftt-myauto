@@ -77,7 +77,7 @@
                <font>
                   <Font name="Bauhaus 93" size="14.0" />
                </font></JFXButton>
-            <JFXButton layoutX="15.0" layoutY="557.0" style="-fx-background-color: #8B3A3A;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="1.5" AnchorPane.topAnchor="568.0">
+            <JFXButton fx:id="btnSair" layoutX="15.0" layoutY="557.0" onAction="#handleButtonAction" style="-fx-background-color: #8B3A3A;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="1.5" AnchorPane.topAnchor="568.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
