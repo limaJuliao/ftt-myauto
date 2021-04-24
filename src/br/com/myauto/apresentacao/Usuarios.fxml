@@ -68,7 +68,7 @@
             <JFXTextArea layoutX="370.0" layoutY="234.0" prefHeight="28.0" prefWidth="300.0" promptText="Seu email" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="230.0" />
             <JFXTextArea layoutX="406.0" layoutY="374.0" prefHeight="28.0" prefWidth="300.0" promptText="Digite uma senha" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="290.0" />
             <JFXTextArea layoutX="402.0" layoutY="417.0" prefHeight="28.0" prefWidth="300.0" promptText="Repita a senha" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="350.0" />
-            <Button fx:id="btnCriar" layoutX="376.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="300.0" text="Criar" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="480.0">
+            <Button fx:id="btnCriar" layoutX="376.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="300.0" text="Cadastrar" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="480.0">
                <font>
                   <Font name="Dubai Medium" size="24.0" />
                </font>
@@ -96,17 +96,12 @@
             <JFXComboBox fx:id="cbVeiculo" layoutX="378.0" layoutY="104.0" prefHeight="28.0" prefWidth="200.0" promptText="Tipo de Veículo" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="170.0" />
             <JFXComboBox fx:id="cbFabricante" layoutX="262.0" layoutY="216.0" prefHeight="28.0" prefWidth="200.0" promptText="Marca" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="230.0" />
             <JFXComboBox fx:id="cbModelo" layoutX="501.0" layoutY="262.0" prefHeight="28.0" prefWidth="200.0" promptText="Modelo" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="290.0" />
-            <Button fx:id="btnRegistrar" layoutX="427.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="300.0" text="Registrar" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="480.0">
+            <Button fx:id="btnRegistrar" layoutX="427.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="300.0" text="Cadastrar" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="480.0">
                <font>
                   <Font name="Dubai Medium" size="24.0" />
                </font>
             </Button>
-            <JFXTextArea fx:id="txtApelido" layoutX="495.0" layoutY="166.0" prefHeight="28.0" prefWidth="200.0" promptText="Apelido do Veículo" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="170.0" />
-            <Hyperlink fx:id="hpPossui" layoutX="434.0" layoutY="544.0" onAction="#handleButtonAction" text="Já possui conta?" textFill="#1c1c1c" AnchorPane.leftAnchor="435.0" AnchorPane.topAnchor="540.0">
-               <font>
-                  <Font name="Dubai Medium" size="18.0" />
-               </font>
-            </Hyperlink>
+            <JFXTextArea fx:id="txtApelido" layoutX="495.0" layoutY="166.0" prefHeight="25.0" prefWidth="200.0" promptText="Apelido do Veículo" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="170.0" />
             <Button fx:id="btnVoltarCriar" layoutX="28.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="120.0" text="Voltar" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
                <font>
                   <Font name="Dubai Medium" size="14.0" />
@@ -115,7 +110,7 @@
             <JFXComboBox fx:id="cbCombustivel" layoutX="263.0" layoutY="277.0" prefHeight="28.0" prefWidth="200.0" promptText="Tipo de Combustível" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="290.0" />
             <JFXComboBox fx:id="cbAno" layoutX="522.0" layoutY="215.0" prefHeight="28.0" prefWidth="80.0" promptText="Ano" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="230.0" />
             <JFXTextArea fx:id="txtVolume" layoutX="287.0" layoutY="354.0" prefHeight="28.0" prefWidth="80.0" promptText="Volume (L)" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="350.0" />
-            <JFXTextArea fx:id="txtPlaca" layoutX="635.0" layoutY="227.0" prefHeight="28.0" prefWidth="90.0" promptText="Placa" AnchorPane.leftAnchor="635.0" AnchorPane.topAnchor="225.0" />
+            <JFXTextArea fx:id="txtPlaca" layoutX="635.0" layoutY="227.0" prefHeight="25.0" prefWidth="90.0" promptText="Placa" AnchorPane.leftAnchor="635.0" AnchorPane.topAnchor="225.0" />
             <JFXTextArea fx:id="txtRenavan" layoutX="544.0" layoutY="378.0" prefHeight="25.0" prefWidth="200.0" promptText="Renavan" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="350.0" />
             <JFXToggleButton fx:id="tgFrequencia" layoutX="404.0" layoutY="338.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="150.0" text="2 tanques ?" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="340.0" />
             <JFXTextArea fx:id="txtComentario" layoutX="273.0" layoutY="424.0" prefHeight="25.0" prefWidth="470.0" promptText="Comentário" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="410.0" />

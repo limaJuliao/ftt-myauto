@@ -8,6 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="MyAuto.jar" size="29228" download="eager" />
     <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
     <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
@@ -16,5 +17,12 @@
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
   <jfx:javafx-desc  width="800" height="600" main-class="br.com.myauto.apresentacao.MyAuto"  name="MyAuto" />
+=======
+    <jar href="MyAuto.jar" size="14457" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="myauto.MyAuto"  name="MyAuto" />
+>>>>>>> d53130a9e10971b8370222cd352b4aaf8fd61970
   <update check="always"/>
 </jnlp>
