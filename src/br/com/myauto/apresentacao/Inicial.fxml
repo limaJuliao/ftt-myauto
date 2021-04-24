@@ -86,43 +86,6 @@
       </AnchorPane>
       <AnchorPane layoutX="339.0" layoutY="-1.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane id="pnReabastecimento" fx:id="pnAbastecimento" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <Label layoutX="247.0" layoutY="37.0" text="Abastecimento" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
-                     <font>
-                        <Font name="Dubai Medium" size="48.0" />
-                     </font>
-                  </Label>
-                  <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="430.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="550.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
-                  <DatePicker fx:id="dtAbast" layoutX="56.0" layoutY="144.0" prefHeight="27.0" prefWidth="170.0" promptText="Data" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="230.0" />
-                  <JFXTimePicker layoutX="327.0" layoutY="146.0" promptText="Hora" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="230.0" />
-                  <JFXTextArea fx:id="txtOdo" layoutX="59.0" layoutY="212.0" prefColumnCount="28" prefHeight="28.0" prefWidth="180.0" promptText="Odômetro" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="290.0" />
-                  <ComboBox id="cbCombustivel" fx:id="cbCombustivel" layoutX="510.0" layoutY="144.0" prefHeight="40.0" prefWidth="170.0" promptText="Combustível" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="160.0" />
-                  <JFXTextArea layoutX="211.0" layoutY="351.0" prefColumnCount="28" prefHeight="28.0" prefWidth="110.0" promptText="Preço/Litro" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="351.0" />
-                  <CheckBox fx:id="chTanque" layoutX="351.0" layoutY="240.0" mnemonicParsing="false" text="Você está enchendo o Tanque?" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="320.0" />
-                  <JFXTextArea fx:id="txtOdometro12" focusColor="#1e45b9" layoutX="55.0" layoutY="439.0" prefColumnCount="28" prefHeight="28.0" prefWidth="190.0" promptText="Local (Posto)" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="410.0" />
-                  <Button id="btnCarro" fx:id="btnRegistrar" layoutX="193.0" layoutY="500.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="200.0" text="Registrar" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="490.0">
-                     <font>
-                        <Font name="Dubai Medium" size="18.0" />
-                     </font>
-                  </Button>
-                  <JFXTextArea fx:id="txtOdometro111" layoutX="57.0" layoutY="300.0" prefColumnCount="28" prefHeight="28.0" prefWidth="110.0" promptText="Litros" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="350.0" />
-                  <TableView prefHeight="430.0" prefWidth="330.0" AnchorPane.leftAnchor="630.0" AnchorPane.topAnchor="130.0">
-                     <columns>
-                        <TableColumn prefWidth="110.0" text="HISTÓRICO DE ABASTECIMENTOS">
-                           <columns>
-                              <TableColumn prefWidth="110.0" text="Data" />
-                              <TableColumn prefWidth="110.0" text="Tipo" />
-                              <TableColumn prefWidth="110.0" text="Obs:" />
-                           </columns></TableColumn>
-                     </columns>
-                  </TableView>
-                  <JFXTextArea fx:id="txtOdometro11" layoutX="336.0" layoutY="308.0" prefColumnCount="28" prefHeight="28.0" prefWidth="110.0" promptText="Preço total" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="350.0" />
-                  <ComboBox fx:id="cbMotivoDespesa21" layoutX="537.0" layoutY="197.0" prefHeight="40.0" prefWidth="170.0" promptText="Motivo" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="160.0" />
-                  <JFXTextArea fx:id="txtNotas111" layoutX="62.0" layoutY="366.0" prefHeight="28.0" prefWidth="200.0" promptText="Observações:" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="410.0" />
-                  <CheckBox fx:id="chTanque1" layoutX="361.0" layoutY="250.0" mnemonicParsing="false" text="Ultimo lançamento faltando ?" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="290.0" />
-               </children>
-            </AnchorPane>
             <AnchorPane fx:id="pnRelatorios" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="265.0" layoutY="18.0" text="Relatórios" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
@@ -298,6 +261,43 @@
                   <JFXTextArea fx:id="txtOdometro123" focusColor="#1e45b9" layoutX="300.0" layoutY="213.0" prefColumnCount="28" prefHeight="28.0" prefWidth="200.0" promptText="Local" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="225.0" />
                   <JFXTextArea fx:id="txtNotas2" layoutX="388.0" layoutY="305.0" prefHeight="28.0" prefWidth="200.0" promptText="Observações :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="285.0" />
                   <JFXToggleButton fx:id="tgUnica" onAction="#handleButtonAction" opacity="0.0" text="Repetir" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="pnReabastecimento" fx:id="pnAbastecimento" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF6A6A;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="247.0" layoutY="37.0" text="Abastecimento" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="Dubai Medium" size="48.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="430.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="550.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
+                  <DatePicker fx:id="dtAbast" layoutX="56.0" layoutY="144.0" prefHeight="27.0" prefWidth="170.0" promptText="Data" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="230.0" />
+                  <JFXTimePicker layoutX="327.0" layoutY="146.0" promptText="Hora" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="230.0" />
+                  <JFXTextArea fx:id="txtOdo" layoutX="59.0" layoutY="212.0" prefColumnCount="28" prefHeight="28.0" prefWidth="180.0" promptText="Odômetro" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="290.0" />
+                  <ComboBox id="cbCombustivel" fx:id="cbCombustivel" layoutX="510.0" layoutY="144.0" prefHeight="40.0" prefWidth="170.0" promptText="Combustível" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="160.0" />
+                  <JFXTextArea layoutX="211.0" layoutY="351.0" prefColumnCount="28" prefHeight="28.0" prefWidth="110.0" promptText="Preço/Litro" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="351.0" />
+                  <CheckBox fx:id="chTanque" layoutX="351.0" layoutY="240.0" mnemonicParsing="false" text="Você está enchendo o Tanque?" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="320.0" />
+                  <JFXTextArea fx:id="txtOdometro12" focusColor="#1e45b9" layoutX="55.0" layoutY="439.0" prefColumnCount="28" prefHeight="28.0" prefWidth="190.0" promptText="Local (Posto)" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="410.0" />
+                  <Button id="btnCarro" fx:id="btnRegistrar" layoutX="193.0" layoutY="500.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="200.0" text="Registrar" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="490.0">
+                     <font>
+                        <Font name="Dubai Medium" size="18.0" />
+                     </font>
+                  </Button>
+                  <JFXTextArea fx:id="txtOdometro111" layoutX="57.0" layoutY="300.0" prefColumnCount="28" prefHeight="28.0" prefWidth="110.0" promptText="Litros" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="350.0" />
+                  <TableView prefHeight="430.0" prefWidth="330.0" AnchorPane.leftAnchor="630.0" AnchorPane.topAnchor="130.0">
+                     <columns>
+                        <TableColumn prefWidth="110.0" text="HISTÓRICO DE ABASTECIMENTOS">
+                           <columns>
+                              <TableColumn prefWidth="110.0" text="Data" />
+                              <TableColumn prefWidth="110.0" text="Tipo" />
+                              <TableColumn prefWidth="110.0" text="Obs:" />
+                           </columns></TableColumn>
+                     </columns>
+                  </TableView>
+                  <JFXTextArea fx:id="txtOdometro11" layoutX="336.0" layoutY="308.0" prefColumnCount="28" prefHeight="28.0" prefWidth="110.0" promptText="Preço total" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="350.0" />
+                  <ComboBox fx:id="cbMotivoDespesa21" layoutX="537.0" layoutY="197.0" prefHeight="40.0" prefWidth="170.0" promptText="Motivo" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="160.0" />
+                  <JFXTextArea fx:id="txtNotas111" layoutX="62.0" layoutY="366.0" prefHeight="28.0" prefWidth="200.0" promptText="Observações:" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="410.0" />
+                  <CheckBox fx:id="chTanque1" layoutX="361.0" layoutY="250.0" mnemonicParsing="false" text="Último lançamento faltando ?" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="290.0" />
                </children>
             </AnchorPane>
          </children>

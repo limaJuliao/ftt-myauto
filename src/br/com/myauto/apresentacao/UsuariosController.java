@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package myauto;
+package br.com.myauto.apresentacao;
+
 
 import com.jfoenix.controls.JFXButton;
 import java.net.URL;
