@@ -102,24 +102,46 @@ public class UsuarioDAO {
 
         try(PreparedStatement stm = connection.prepareStatement(query)){
 
-        stm.execute();
+            stm.execute();
 
-        try(ResultSet rst = stm.getResultSet()){
-            while(rst.next()){
-                Integer usuarioID = rst.getInt("usuario_id");
-                String nome = rst.getString("nome");
-                String email = rst.getString("email");
-                String senha = rst.getString("senha");
+            try(ResultSet rst = stm.getResultSet()){
+                while(rst.next()){
+                    Integer usuarioID = rst.getInt("usuario_id");
+                    String nome = rst.getString("nome");
+                    String email = rst.getString("email");
+                    String senha = rst.getString("senha");
 
-                Usuario usuario = new Usuario(usuarioID,
-                        nome,
-                        new Email(email),
-                        new Senha(senha));
+                    Usuario usuario = new Usuario(usuarioID,
+                            nome,
+                            new Email(email),
+                            new Senha(senha));
 
-                usuarios.add(usuario);
+                    usuarios.add(usuario);
+                }
             }
+            return usuarios;
         }
-        return usuarios;
+    }
+    
+    public boolean update(Usuario usuario) throws SQLException{
+        
+        String sql = "PDATE [dbo].[Usuario]\n" +
+                    "   SET [nome] = ?\n" +
+                    "      ,[email] = ?\n" +
+                    "      ,[senha] = ?\n" +
+                    " WHERE ?";
+        
+        try(PreparedStatement pstm = connection.prepareStatement(sql)){
+            pstm.setString(1, usuario.getNome());
+            pstm.setString(2, usuario.getEmail().getEndereco());            
+            pstm.setString(3, usuario.getSenha().getSenhaValorCifrado());
+            pstm.setInt(4, usuario.getUsuario_Id());
+            
+            pstm.execute();
+            
+            int linhasModificadas = pstm.getUpdateCount();
+            
+            return linhasModificadas > 0;
         }
     }
 }

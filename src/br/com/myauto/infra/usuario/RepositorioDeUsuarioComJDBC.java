@@ -5,16 +5,11 @@
  */
 package br.com.myauto.infra.usuario;
 
-import br.com.myauto.dominio.modelo.usuario.Email;
 import br.com.myauto.dominio.usuario.RepositorioDeUsuario;
-import br.com.myauto.dominio.modelo.usuario.Senha;
 import br.com.myauto.dominio.modelo.usuario.Usuario;
 import br.com.myauto.infra.ConnectionFactory;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -29,8 +24,7 @@ public class RepositorioDeUsuarioComJDBC implements RepositorioDeUsuario {
     public List<Usuario> listarUsuarios() throws SQLException{
         
         try(Connection connection = this.connectionFactory.recuperarConexao()){
-            return new ArrayList<>();
-            }
+            return new UsuarioDAO(connection).listar();
         }
     }
 
@@ -59,26 +53,10 @@ public class RepositorioDeUsuarioComJDBC implements RepositorioDeUsuario {
     }
 
     @Override
-    public void editarUsuario(Usuario usuario) throws SQLException{
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    public static void main(String[] args) throws SQLException{
-        RepositorioDeUsuario ru = new RepositorioDeUsuarioComJDBC();
+    public boolean editarUsuario(Usuario usuario) throws SQLException {
         
-//        UsuarioDTO usuarioDto = new UsuarioDTO("Maria", "maria@teste.com", "12345");
-        
-//        Usuario usuario = usuarioDto.criarUsuario();
-        
-//        ru.inserirUsuário(usuario);
-
-//        ru.excluirUsuario(4);
-        
-        List<Usuario> usuarios = ru.listarUsuarios();
-        
-        usuarios.forEach(usu -> {
-            System.out.println(usu.getEmail().getEndereco());
-        });
-        
+        try(Connection connection = connectionFactory.recuperarConexao()){
+            return new UsuarioDAO(connection).update(usuario);
+        }
     }
 }
