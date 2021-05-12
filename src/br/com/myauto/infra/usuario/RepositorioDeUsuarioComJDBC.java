@@ -47,7 +47,7 @@ public class RepositorioDeUsuarioComJDBC implements RepositorioDeUsuario {
     @Override
     public boolean excluirUsuario(int id) throws SQLException{       
         
-        try(Connection connection = connectionFactory.recuperarConexao()){
+        try(Connection connection = this.connectionFactory.recuperarConexao()){
             return new UsuarioDAO(connection).delete(id);            
         }
     }

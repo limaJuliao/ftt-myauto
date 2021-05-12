@@ -24,6 +24,6 @@ public interface RepositorioDeVeiculo {
 
     boolean excluirVeiculo(int id) throws SQLException;
 
-    Usuario buscarVeiculoPorId(int id) throws SQLException;
+    Veiculo buscarVeiculoPorId(int id) throws SQLException;
     
 }
